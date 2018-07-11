@@ -30,7 +30,7 @@ if len(sys.argv) > 1:
 with file(target, 'wb') as f:
     f.write(json.dumps(dict(
         playlist = [dict(
-            duration = IMAGE_DURATION,
+            duration = duration,
             file = dict(
                 asset_name = fname,
                 type = type,
