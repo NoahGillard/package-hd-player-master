@@ -11,9 +11,9 @@ local shaders = {
         void main() {
             vec2 texcoord = TexCoord * vec2(s, s) + vec2(x, y);
             vec4 c1 = texture2D(Texture, texcoord);
-            vec4 c2 = texture2D(Texture, texcoord + vec2(0.001, 0.0000));
-            vec4 c3 = texture2D(Texture, texcoord + vec2(0.0005, 0.0005));
-            vec4 c4 = texture2D(Texture, texcoord + vec2(0.0000, 0.001));
+            vec4 c2 = texture2D(Texture, texcoord + vec2(0.0004, 0.0000));
+            vec4 c3 = texture2D(Texture, texcoord + vec2(0.0002, 0.0002));
+            vec4 c4 = texture2D(Texture, texcoord + vec2(0.0000, 0.0004));
             gl_FragColor = (c4+c3+c2+c1)*0.25 * Color;
         }
     ]], 
