@@ -94,7 +94,7 @@ local Loading = (function()
     end
 
     local function fade_in()
-        alpha = math.min(1, alpha + 0.01)
+        alpha = math.min(1, alpha + 0.1)
     end
 
     local function fade_out()
