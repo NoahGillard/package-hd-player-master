@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys, os, json, subprocess
 
-IMAGE_DURATION = 10
+IMAGE_DURATION = 30
 
 # If you get an error, install the libav-tools package for the avprobe program:
 # apt-get install libav-tools
