@@ -14,7 +14,7 @@ local shaders = {
             vec4 c2 = texture2D(Texture, texcoord + vec2(0.0008, 0.0000));
             vec4 c3 = texture2D(Texture, texcoord + vec2(0.0004, 0.0004));
             vec4 c4 = texture2D(Texture, texcoord + vec2(0.0000, 0.0008));
-            gl_FragColor = (c4+c3+c2+c1)*0.20 * Color;
+            gl_FragColor = (c4+c3+c2+c1)*0.25 * Color;
         }
     ]], 
     simple = resource.create_shader[[
